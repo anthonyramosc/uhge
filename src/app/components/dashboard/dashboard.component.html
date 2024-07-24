@@ -1,7 +1,7 @@
 <div class="container">
     <!-- Botones de vista -->
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center weight">
             <button class="btn btn-outline-danger m-1" (click)="showMonthlyView()">M</button>
             <button class="btn btn-outline-danger m-1" (click)="showWeeklyView()">S</button>
             <button class="btn btn-outline-danger m-1" (click)="showDailyView()">D</button>
@@ -90,24 +90,24 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th colspan="2">23 de Julio de 2024</th>
+                    <th class="form-control form-control-sm" colspan="2">23 de Julio de 2024</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="hour">11:00am</td>
+                    <td class="fw-bold" (click)="addEvent($event)"></td>
+                </tr>
+                <tr>
+                    <td class="hour">12:00am</td>
                     <td (click)="addEvent($event)"></td>
                 </tr>
                 <tr>
-                    <td class="hour">11:15am</td>
+                    <td class="hour">2:00pm</td>
                     <td (click)="addEvent($event)"></td>
                 </tr>
                 <tr>
-                    <td class="hour">11:30am</td>
-                    <td (click)="addEvent($event)"></td>
-                </tr>
-                <tr>
-                    <td class="hour">11:45am</td>
+                    <td class="hour">3:00pm</td>
                     <td (click)="addEvent($event)"></td>
                 </tr>
             </tbody>

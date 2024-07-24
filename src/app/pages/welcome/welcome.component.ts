@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HeroComponent} from "../../components/hero/hero.component";
+import { DashboardComponent } from '../../components/dashboard/dashboard.component';
 
 @Component({
   selector: 'app-welcome',
@@ -7,7 +7,7 @@ import {HeroComponent} from "../../components/hero/hero.component";
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css'],
   imports: [
-    DASHBOARD
+    DashboardComponent
   ]
 })
 export class WelcomeComponent implements OnInit {
